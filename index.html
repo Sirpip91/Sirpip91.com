@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Sirpip91</title>
+    <script defer src="/js/script.js"></script>
+<script>
+  const initialTheme = localStorage.getItem('theme') || 'light';
+  document.documentElement.setAttribute('data-theme', initialTheme);
+</script>
+  <link rel="stylesheet" href="/css/style.css" />
+      <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Sirpip91</h1>
+            <nav class="site-nav">
+            <a href="/index.html">Home</a> | 
+            <a href="/sections/">Library</a> | 
+            <button id="theme-toggle">Dark</button>
+        </nav>
+        <hr>
+    </header>
+
+  <main>
+    <p>Welcome to my knowledge archive. This site holds my thoughts, lessons, and insights.</p>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Sirpip91 </p>
+  </footer>
+</body>
+</html>
