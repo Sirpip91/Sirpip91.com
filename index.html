@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home | Sirpip91</title>
   <script defer src="/js/script.js"></script>
-  <script>
-    const initialTheme = localStorage.getItem('theme') || 'light';
-    document.documentElement.setAttribute('data-theme', initialTheme);
-  </script>
+<script>
+  const initialTheme = localStorage.getItem('theme') || 'light';
+  document.documentElement.setAttribute('data-theme', initialTheme);
+</script>
   <link rel="stylesheet" href="/css/home.css" />
   <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
   <meta name="description" content="Programming insights, coding lessons, and personal growth — the Sirpip91 knowledge archive.">
@@ -18,34 +18,26 @@
     <h1>bradleydallen.io</h1>
     <nav class="site-nav">
       <a href="/index.html">Home</a> | 
-      <a href="/sections/">Library</a> |  
-      <a href="https://sirpip91.gumroad.com" target="_blank">Courses</a> | 
+      <a href="/library/">Library</a> |  
+      <a href="https://bradleydallen.gumroad.com/" target="_blank">Courses</a> | 
       <button id="theme-toggle">Dark</button>
     </nav>
     <hr>
   </header>
 
   <main>
-<section class="intro">
-  <div class="intro-container">
-    <h1>Learn <span>Knowledge That Matters</span></h1>
-    <p class="subtitle">Master Computer Science concepts that schools don't teach</p>
-    <hr class="intro-divider">
 
+<section class="hero">
+  <div class="hero-container">
+    <h1>Learn Knowledge That Matters</h1>
+    <hr class="hero-divider">
 
-  </div>
-</section>
+<p class="hero-description">
+  Over the years, I’ve gathered valuable insights and lessons from my experiences, projects, and learning journey.  
+  I want to share and teach these so you can benefit from what I’ve learned without having to figure it all out on your own.
+</p>
 
-
-<section class="learn-more">
-  <div class="learn-more-container">
-    <h2>Valuable Information</h2>
-    <p>
-      Over the years I have worked in the field, built many projects and refined these lessons to teach you
-      <b>how things truly work</b>.  
-      No fluff, no filler — just the kind of knowledge that helps you think like an engineer.
-    </p>
-    <a href="/sections/index.html" class="btn btn-primary">Explore Library</a>
+    <a href="/library/index.html" class="btn btn-primary">Explore Library</a>
   </div>
 </section>
 
@@ -53,19 +45,38 @@
     <section class="content">
       <h3>Latest Posts</h3>
       <ul>
-        <li><a href="/sections/mindsets/time.html">The Bindings of Time</a></li>
-        <li><a href="/sections/mindsets/learning-involves-effort.html">Learning Involves Effort</a></li>
+        <li><a href="/library/mindsets/time.html">The Bindings of Time</a></li>
+        <li><a href="/library/mindsets/learning-involves-effort.html">Learning Involves Effort</a></li>
       </ul>
-      <p><a href="/sections/">→ Browse the full library</a></p>
+      <p><a href="/library/">→ Browse the full library</a></p>
     </section>
 
-    <section class="support">
-      <h3>Support the Site</h3>
-      <p>
-        If you enjoy my content or it’s helped you in your coding journey, consider supporting through a donation or by sharing my work.
-      </p>
-      <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="bradleydallen" data-color="#FFDD00" data-emoji="☕" data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>    </section>
-  </main>
+  <section class="support">
+    <h3>Support the Site</h3>
+    <p>
+      If you enjoy my content or it’s helped you in your coding journey, consider supporting through a donation or by sharing my work.
+    </p>
+
+    <div class="support-buttons">
+      <!-- Buy Me a Coffee -->
+      <div class="left-button">
+        <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" 
+          data-name="bmc-button" data-slug="bradleydallen" data-color="#FFDD00" data-emoji="☕" 
+          data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" 
+          data-font-color="#000000" data-coffee-color="#ffffff"></script>
+      </div>
+
+      <!-- Gumroad
+      <div class="right-button">
+        <script src="https://gumroad.com/js/gumroad.js"></script>
+        <a class="gumroad-button" href="https://9432604211760.gumroad.com/l/demo">Support</a>
+      </div>
+      -->
+    </div>
+  </section>
+
+      
+    </main>
 
     <footer>
       

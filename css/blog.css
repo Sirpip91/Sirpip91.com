@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
+
 /* ================== CSS ================== */
 /* Basic Reset */
 * {
@@ -315,3 +317,86 @@ code {
     padding: 0;
   }
 }
+
+
+/* ================== Code Block Styling ================== */
+pre {
+  background: #1e1e1e; /* editor dark theme background */
+  color: #dcdcdc;
+  padding: 1.5rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: "Fira Code", "JetBrains Mono", Consolas, monospace;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+code {
+  font-family: inherit;
+  background: none;
+  color: inherit;
+}
+
+/* Inline code (not blocks) */
+p code, li code {
+  background: rgba(0, 0, 0, 0.07);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+/* ================== Syntax Highlighting ================== */
+
+/* C++ keywords */
+.lang-cpp .hljs-keyword { color: #569cd6; font-weight: 500; }
+
+/* Numbers */
+.lang-cpp .hljs-number,
+.lang-cpp .hljs-symbol,
+.lang-cpp .hljs-literal { color: #b5cea8; }
+
+/* Strings */
+.lang-cpp .hljs-string { color: #ce9178; }
+
+/* Comments */
+.lang-cpp .hljs-comment { color: #6a9955; font-style: italic; }
+
+/* Functions & built-in identifiers */
+.lang-cpp .hljs-built_in { color: #4fc1ff; }
+
+/* Highlighted code lines (optional) */
+.lang-cpp .hljs-code { display: block; padding-left: 1rem; }
+
+/* ================== Light Theme Support ================== */
+[data-theme="light"] pre {
+  background: #f5f5f5;
+  color: #1e1e1e;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+[data-theme="light"] .lang-cpp .hljs-comment { color: #008000; }
+[data-theme="light"] .lang-cpp .hljs-string { color: #a31515; }
+[data-theme="light"] .lang-cpp .hljs-keyword { color: #0000ff; }
+[data-theme="light"] .lang-cpp .hljs-number { color: #098658; }
+[data-theme="light"] .lang-cpp .hljs-built_in { color: #795e26; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
